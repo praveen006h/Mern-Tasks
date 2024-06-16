@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Builderz Layout</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f5f5f5;
+        }
+        .navbar-custom {
+            background-color: #f0ad4e;
+        }
+        .navbar-custom1 {
+            background-color: #000000;
+        }
+        .navbar-dark .navbar-nav .nav-link {
+            color: #ffffff;
+        }
+        .navbar-dark .navbar-nav .nav-link.active {
+            color: #f0ad4e;
+        }
+        .hero-section {
+            background: url("eng.jpg") no-repeat center center;
+            background-size: cover;
+            height: 400px;
+            position: relative;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .hero-content {
+            text-align: center;
+        }
+        .hero-content h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        .hero-content .btn {
+            margin-top: 20px;
+        }
+        .feature-section {
+            padding: 40px 0;
+        }
+        .feature-box {
+            padding: 20px;
+            background-color: #010101;
+            color: #ffffff;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .feature-box.dark {
+            background-color: #e9a20a;
+        }
+        .feature-box h3 {
+            margin-bottom: 15px;
+        }
+      
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><span style="font-weight:900; color: #010101;">Builderz</span></a>
+            </div>
+        </nav>
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom1">
+            <div class="container">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" href="#">HOME</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">ABOUT</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">SERVICE</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">TEAM</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">PROJECT</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">PAGES</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">CONTACT</a></li>
+                    </ul>
+                    <span class="navbar-text">
+                        <a href="#" class="btn btn-outline-light">Get A Quote</a>
+                    </span>
+                </div>
+            </div>
+        </nav>
+            <!-- Hero Section -->
+            <section class="hero-section">
+                <div class="hero-content">
+                    <h1>We Are Professional</h1>
+                    <p>For Your Dream Project</p>
+                    <a href="#" class="btn btn-light">Get A Quote</a>
+                </div>
+            </section>
+
+            <!-- Features Section -->
+            <section class="feature-section container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="feature-box">
+                            <h3>Expert Worker</h3>
+                            <p>Lorem ipsum dolor sit amet elit. Phasellus nec pretium ornare velit non.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="feature-box dark">
+                            <h3>Quality Work</h3>
+                            <p>Lorem ipsum dolor sit amet elit. Phasellus nec pretium ornare velit non.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="feature-box">
+                            <h3>24/7 Support</h3>
+                            <p>Lorem ipsum dolor sit amet elit. Phasellus nec pretium ornare velit non.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

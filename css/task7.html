@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            background-color: #B1345C;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .form-container {
+            background-color: #831C48;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 500px;
+            height: 500px; /* Adjust width for better form field alignment */
+        }
+
+        form {
+            align-items: center;
+            padding-left: 80px;
+        }
+
+        label {
+            color: white;
+            text-align: right;
+            padding-right: 10px;
+        }
+
+        input, select, textarea {
+            padding: 8px;
+            margin-bottom: 0; /* Remove margin to align fields properly */
+            border: none;
+            border-radius: 1px;
+            outline: none;
+            margin-top: 10px;
+        }
+
+        .radio-group {
+            display: flex;
+            align-items: center;
+        }
+
+        .radio-group input[type="radio"] {
+            margin: 0 5px 0 0;
+        }
+
+        .radio-group label {
+            margin: 0 10px 0 0;
+            color: white;
+        }
+
+        button {
+            width: 375px;
+            padding: 10px;
+            background-color: #fdfafc;
+            border: none;
+            border-radius: 5px;
+            color: #0e0d0d;
+            font-weight: bold;
+            font-size: large;
+            cursor: pointer;
+            margin-top: 10px; /* Add margin to separate button from fields */
+        }
+
+        button:hover {
+            background-color: #D98AB8;
+        }
+        table
+        {
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <form action="#" method="post">
+            <table>
+                <tr>
+                    <td><label for="name">Name:</label></td>
+                    <td><input type="text" id="name" name="name" placeholder="your name" required size="30"></td>
+                </tr>
+                <tr style="  margin-top: 15px;">
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="email" id="email" name="email" placeholder="your email" required size="30"></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password:</label></td>
+                    <td><input type="password" id="password" name="password" placeholder="your password" required size="30"></td>
+                </tr>
+                <tr>
+                    <td><label for="phone">Phone Number:</label></td>
+                    <td><input type="tel" id="phone" name="phone" placeholder="your phone number" required size="30"></td>
+                </tr>
+                <tr>
+                    <td><label>Gender:</label></td>
+                    <td>
+                        <div class="radio-group">
+                            <label for="male">Male:</label>
+                            <input type="radio" id="male" name="gender" value="male">
+                            <label for="female">Female:</label>
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label for="other">Other:</label>
+                            <input type="radio" id="other" name="gender" value="other">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="language">Language:</label></td>
+                    <td>
+                        <select id="language" name="language" required>
+                            <option value="" disabled selected>Select language</option>
+                            <option value="english">English</option>
+                            <option value="spanish">Tamil</option>
+                            <option value="french">French</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="zip">Zip Code:</label></td>
+                    <td><input type="text" id="zip" name="zip" placeholder="your zip code" required size="30"></td>
+                </tr>
+                <tr>
+                    <td><label for="about">About:</label></td>
+                    <td><textarea id="about" name="about" placeholder="Write about yourself..." required cols="29"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button type="submit">Register</button></td>
+                </tr>
+            </table>
+
+        </form>
+    </div>
+</body>
+</html>

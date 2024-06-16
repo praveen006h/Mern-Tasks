@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML and CSS Recreation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        table {
+            width: 100%;
+            margin-bottom: 20px;
+            background-color: #cde7e8;
+            color:black
+            
+        }
+
+        th, td {
+            border: 1px solid #6fb6bb;
+            padding: 10px;
+            text-align: left;
+            border-radius: 20px;
+        }
+
+        th {
+            background-color: #81d3d9;
+            text-align: center;
+        }
+
+        .shapes {
+            display: flex;
+            flex-wrap: wrap;
+            width: 400px;
+            margin: 0 auto;
+        }
+
+        .shape {
+            width: 80px;
+            height: 40px;
+            border: 2px solid #88c057;
+            margin: 10px;
+        }
+
+        .rectangle1 {
+            border-radius: 1px;
+        }
+        .rectangle2 {
+            border-radius: 10px;
+        }
+        .rectangle3 {
+            border-radius: 15px;
+        }
+        .rectangle4 {
+            border-radius: 5px;
+        }
+        .rectangle5 {
+            border-radius: 10px;
+        }
+        .rectangle6 {
+            border-radius: 5px;
+        }
+        .rectangle7 {
+            border-radius: 10px;
+        }
+        .rectangle8 {
+            border-top-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        .ellipse {
+            width: 90px;
+            height: 45px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Eve</td>
+                <td>Jackson</td>
+                <td>94</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>80</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="shapes">
+        <div class="shape rectangle1"></div>
+        <div class="shape rectangle2"></div>
+        <div class="shape rectangle3"></div>
+        <div class="shape rectangle4"></div>
+        <div class="shape rectangle5"></div>
+        <div class="shape rectangle6"></div>
+        <div class="shape ellipse"></div>
+        <div class="shape rectangle7"></div>
+        <div class="shape rectangle8"></div>
+        
+    </div>
+</body>
+</html>

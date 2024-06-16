@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #navbar {
+            display: flex;
+            align-items: center;
+            justify-content:center;
+            
+        }
+        /* Vertical Navigation Bar */
+        .vertical-navbar {
+            width: 200px;
+            border: 1px solid black;
+            margin-bottom: 20px;
+            background-color: rgb(79, 204, 204);
+        }
+
+        .vertical-navbar a {
+            display: block;
+            color: blue;
+            padding: 10px;
+            text-decoration: none;
+        }
+
+        .vertical-navbar a:hover {
+            color: orange;
+        }
+
+        .vertical-navbar .active {
+            background-color: orange;
+            color: white;
+        }
+
+        /* Horizontal Navigation Bar */
+        .horizontal-navbar {
+            display: flex;
+            border: 1px solid black;
+            width: fit-content;
+            background-color: rgb(220, 202, 202);
+           
+        }
+
+        .horizontal-navbar a {
+            flex: 1;
+            color: blue;
+            padding: 10px;
+            text-decoration: none;
+            text-align: center;
+            border-right: 1px solid black;
+        }
+
+        .horizontal-navbar a:hover {
+            color: orange;
+        }
+
+        .horizontal-navbar a:last-child {
+            border-right: none;
+        }
+
+        .horizontal-navbar .active {
+            background-color: gray;
+            color: white;
+        }
+    </style>
+    <title>Navigation Bars</title>
+</head>
+<body>
+    <div id="navbar">
+        <div>
+    <h3>Vertical Navigation Bar</h3>
+    <div class="vertical-navbar">
+        <a href="#" class="active">Home</a>
+        <a href="#">Java</a>
+        <a href="#">CSS</a>
+        <a href="#">HTML</a>
+        <a href="#">Bootstrap</a></div>
+    </div>
+    <div style="margin-left: 100px;">
+    <h3>Horizontal Navigation Bar</h3>
+    <div class="horizontal-navbar">
+        <a href="#" class="active">Home</a>
+        <a href="#">Java</a>
+        <a href="#">HTML</a>
+        <a href="#">CSS</a>
+    </div></div>    
+</div>
+</body>
+</html> 
